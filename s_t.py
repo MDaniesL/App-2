@@ -15,13 +15,13 @@ from gtts import gTTS
 from googletrans import Translator
 
 
-st.title("TRADUCTOR.")
+st.title("TRADUCTOR")
 st.subheader("Escucho lo que quieres traducir.")
 
 
-image = Image.open('OIG7.jpg')
+image = Image.open('Translate.jpg')
 
-st.image(image,width=300)
+st.image(image,width=500)
 with st.sidebar:
     st.subheader("Traductor.")
     st.write("Presiona el botón, cuando escuches la señal "
@@ -81,12 +81,12 @@ if result:
         input_language = "es"
     elif in_lang == "Bengali":
         input_language = "bn"
-    elif in_lang == "Coreano":
-        input_language = "ko"
-    elif in_lang == "Mandarín":
-        input_language = "zh-cn"
-    elif in_lang == "Japonés":
-        input_language = "ja"
+    elif in_lang == "Irlandés":
+        input_language = "ie"
+    elif in_lang == "Indio":
+        input_language = "in"
+    elif in_lang == "Mongol":
+        input_language = "mo"
     
     out_lang = st.selectbox(
         "Selecciona el lenguaje de salida",
@@ -98,12 +98,12 @@ if result:
         output_language = "es"
     elif out_lang == "Bengali":
         output_language = "bn"
-    elif out_lang == "Coreano":
-        output_language = "ko"
-    elif out_lang == "Mandarín":
-        output_language = "zh-cn"
-    elif out_lang == "Japonés":
-        output_language = "ja"
+    elif out_lang == "Irlandés":
+        output_language = "ie"
+    elif out_lang == "Indio":
+        output_language = "in"
+    elif out_lang == "Mongol":
+        output_language = "mo"
     
     english_accent = st.selectbox(
         "Selecciona el acento",
